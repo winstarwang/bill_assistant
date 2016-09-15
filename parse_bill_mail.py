@@ -16,8 +16,8 @@ from bs4 import BeautifulSoup
 
 
 mail = imaplib.IMAP4_SSL('imap.outlook.com')
-mail.login('winstarwang@outlook.com', 'win8@@)!^')
-mail.select("&T+F1KFNhjSZTVQ-")
+mail.login('email', 'passwd')
+mail.select("Inbox")
 
 #for num in bytes.decode(mail.search(None,'ALL')[1][0]).split(' '):
 for num in bytes.decode(mail.search(None,'ALL')[1][0]).split(' '):
